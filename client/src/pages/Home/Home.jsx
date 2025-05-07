@@ -1,35 +1,30 @@
 import React from "react";
-// import Banner from './Banner/Banner';
-// import Category from './Category/Category';
-// import PopularSection from './PopularSection/PopularSection';
-// import Feature from '../Feature/Feature';
-// import Testimonials from './TESTIMONIALS/Testimonials';
-// import Cover from '../../SheadComponent/Cover/Cover';
-// import CarouselSlider from '../../Component/test';
-// import AboutBuilding from '../../Component/AllUsers/AboutSection';
-// import LocationSection from '../../Component/AllUsers/GoogleMap';
-// import CouponsSection from '../../Component/AllUsers/Cupon';
-// import CuponsClient from '../../Component/CuponsClient';
+
 import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>Building Management (BMS)</title>
+        <title>Building Management (BMS) || Home </title>
       </Helmet>
-
-      {/* <Banner></Banner>
-            <CarouselSlider></CarouselSlider>
-            <Category></Category> */}
-      {/* <PopularSection></PopularSection> */}
-      {/* <Feature></Feature>
-            <CuponsClient></CuponsClient>
-            <AboutBuilding></AboutBuilding>
-            <Testimonials></Testimonials>
-            <LocationSection></LocationSection> */}
-          {/* <CouponsSection></CouponsSection> */}
-          <h2 className="text-2xl">this home </h2>
+      <div className="hero bg-base-200 min-h-screen">
+        <div className="hero-content flex-col lg:flex-row-reverse">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+            className="max-w-sm rounded-lg shadow-2xl"
+          />
+          <div>
+            <h1 className="text-5xl font-bold">Box Office News!</h1>
+            <p className="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <button className="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
