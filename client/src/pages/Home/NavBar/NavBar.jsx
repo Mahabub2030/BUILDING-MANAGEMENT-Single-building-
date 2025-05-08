@@ -6,10 +6,9 @@ import { faHome, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track login status
-
   const links = (
     <>
-      <div className="items-center justify-between flex">
+      <div className="items-center justify-between flex sm:flex">
         <NavLink to="/">
           <a className="text-xm mr-10 btn-xm">Home</a>
         </NavLink>
@@ -27,10 +26,10 @@ const NavBar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 shadow-sm flex items-center justify-between h-[90px]  border w-full sticky top-0 z-50">
+    <div className="navbar bg-base-100 shadow-sm flex items-center justify-between h-[90px] border w-full sticky top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn  p-2 lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -45,39 +44,38 @@ const NavBar = () => {
                 d="M4 6h16M4 12h8m-8 6h16"
               />
             </svg>
-          </div>
+          </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-4"
           >
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">BMS || System</a>
+        <a className="btn  lg:text-xl normal-case sm:text-sm">BMS || System</a>
       </div>
 
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
 
-      {/* Conditional Rendering for Login/Logout */}
-      <div className="navbar-end gap-4 p-4">
+      <div className="navbar-end gap-2 pr-4">
         {isLoggedIn ? (
           <button
-            onClick={() => setIsLoggedIn(false)} // Logout action
-            className="btn btn-primary"
+            onClick={() => setIsLoggedIn(false)}
+            className="btn btn-primary btn-sm"
           >
             Logout
           </button>
         ) : (
           <>
             <NavLink to="/SignInForm">
-              <div className="btn btn-secondary">
+              <div className="btn btn-secondary btn-sm w-32">
                 <FontAwesomeIcon icon={faUser} /> Sign In
               </div>
             </NavLink>
             <NavLink to="/SignupForm">
-              <div className="btn btn-outline">
+              <div className="btn btn-outline btn-sm w-32 ">
                 <FontAwesomeIcon icon={faUser} /> Sign Up
               </div>
             </NavLink>
