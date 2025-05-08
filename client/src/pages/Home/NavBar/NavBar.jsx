@@ -10,16 +10,18 @@ const NavBar = () => {
     <>
       <div className="items-center justify-between flex sm:flex">
         <NavLink to="/">
-          <a className="text-xm mr-10 btn-xm">Home</a>
+          <a className="text-xm mr-10 btn btn-outline btn-sm w-32">Home</a>
         </NavLink>
         <NavLink to="/listing">
-          <a className="text-xm mr-10 btn-xm">Apartmen</a>
+          <a className="text-xm mr-10 btn btn-outline btn-sm w-32">Apartmen</a>
         </NavLink>
         <NavLink to="/agent">
-          <a className="text-xm mr-10 btn-xm">Dashboardt</a>
+          <a className="text-xm mr-10 btn btn-outline btn-sm w-32">
+            Dashboardt
+          </a>
         </NavLink>
         <NavLink to="/agency">
-          <a className="text-xm btn-xm">Agency</a>
+          <a className="text-xm btn btn-outline btn-sm w-32">Agency</a>
         </NavLink>
       </div>
     </>

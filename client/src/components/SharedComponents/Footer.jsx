@@ -53,8 +53,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="z-30 absolute bottom-3 left-0 right-0 px-3 flex items-center justify-between w-full">
-          <p className="text-[0.9rem] text-gray-300">
+        <div className="z-30 absolute bottom-3 left-0 right-0 px-3 flex items-center justify-between w-full text-center">
+          <p className="text-[0.9rem] text-black">
             © 2025 All Rights Mahabub-Alam
           </p>
 
