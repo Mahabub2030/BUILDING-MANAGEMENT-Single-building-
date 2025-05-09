@@ -12,7 +12,7 @@ const NavBar = () => {
         <NavLink to="/">
           <a className="text-xm mr-10 btn btn-outline btn-sm w-32">Home</a>
         </NavLink>
-        <NavLink to="/listing">
+        <NavLink to="/apartment">
           <a className="text-xm mr-10 btn btn-outline btn-sm w-32">Apartmen</a>
         </NavLink>
         <NavLink to="/agent">
@@ -54,7 +54,10 @@ const NavBar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn  lg:text-xl normal-case sm:text-sm">BMS || System</a>
+
+        <NavLink to="/">
+          <a className="text-xm btn  w-32">BMS || System</a>
+        </NavLink>
       </div>
 
       <div className="navbar-center hidden lg:flex">
