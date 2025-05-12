@@ -12,7 +12,7 @@ const NavBar = () => {
         <NavLink to="/">
           <a className="text-xm mr-10 btn btn-outline btn-sm w-32">Home</a>
         </NavLink>
-        <NavLink to="/apartment">
+        <NavLink to="/Apartment">
           <a className="text-xm mr-10 btn btn-outline btn-sm w-32">Apartmen</a>
         </NavLink>
         <NavLink to="/agent">
