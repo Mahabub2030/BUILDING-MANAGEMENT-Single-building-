@@ -9,27 +9,14 @@ const Apartment = () => {
       <Helmet>
         <title>BMS || Apartment</title>
       </Helmet>
-      <div className="min-h-screen p-4 pt-20 ">
-        <h2 className="text-2xl font-bold text-gray-800 font-serif ">
-          Apratments
-        </h2>
+      <div className=" container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
         {/* Search functionality */}
-        <div className="flex mb-6 gap-5">
-          <input
-            type="number"
-            placeholder="min rent"
-            className="border p-2 rounded w-1/2"
-          />
-          <input
-            type="number"
-            placeholder="Max Rent"
-            className="border p-2 rounded w-1/2"
-          /> 
-          <button className="bg-blue-400 text-white py-2 px-4 rounded">Search</button>
-        </div>
         <Card />
-        {/* {pagation start here} */}
+        <Card />
+        <Card />
+        <Card />
 
+        {/* {pagation start here} */}
       </div>
     </>
   );

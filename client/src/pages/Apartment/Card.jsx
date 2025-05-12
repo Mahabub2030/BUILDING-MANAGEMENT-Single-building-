@@ -3,7 +3,7 @@ import React from "react";
 const Card = () => {
   return (
     <div className="container mx-auto mt-10">
-      <div className="card bg-base-100 w-96 shadow-sm">
+      <div className="card bg-base-100 w-96 shadow-sm border">
         <figure>
           <img
             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
